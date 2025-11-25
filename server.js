@@ -12,3 +12,6 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
     res.send('<h1>Lista di cibo vario</h1>')
 })
+
+// Collego il router dei posts
+app.use('/posts', posts)
